@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px 16px;
+}
+
+.auth-card {
+  width: min(100%, 440px);
+  box-shadow: 0 12px 40px rgba(15, 23, 42, .08);
+}
+
+.form-alert {
+  margin-bottom: 16px;
+}
+
+.auth-footer {
+  margin: 20px 0 0;
+  text-align: center;
+}
+
+.page-loading {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.app-layout {
+  min-height: 100vh;
+  background: #f5f7fb;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: #fff;
+  border-bottom: 1px solid #e8edf5;
+  padding-inline: clamp(16px, 4vw, 48px);
+}
+
+.app-header .ant-typography {
+  margin: 0;
+}
+
+.dashboard-content {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  padding: clamp(20px, 4vw, 40px);
+}
+
+@media (max-width: 480px) {
+  .app-header {
+    padding-inline: 12px;
+  }
+
+  .app-header .ant-typography {
+    font-size: 16px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fb;
+}
+
+.app-layout {
+  min-height: 100vh;
+}
+
+.app-sidebar {
+  min-height: 100vh;
+  border-right: 1px solid #f0f0f0;
+}
+
+.sidebar-logo {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 24px;
+  color: #2563eb;
+}
+
+.sidebar-logo h4 {
+  margin: 0;
+}
+
+.dashboard-header {
+  height: 80px;
+  padding: 0 28px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: normal;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.dashboard-header h4 {
+  margin: 0 0 4px;
+}
+
+.dashboard-content {
+  padding: 28px;
+  background: #f5f7fb;
+}
+
+.dashboard-page {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.dashboard-welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.dashboard-welcome h3 {
+  margin: 0 0 6px;
+}
+
+.summary-card,
+.dashboard-card {
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 3%);
+}
+
+.summary-card .ant-card-body {
+  min-height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.summary-card-icon {
+  font-size: 24px;
+}
+
+.dashboard-section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.budget-details {
+  margin-top: 16px;
+}
+
+.dashboard-loading {
+  min-height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .dashboard-content {
+    padding: 16px;
+  }
+
+  .dashboard-header {
+    height: auto;
+    min-height: 72px;
+    padding: 12px 16px;
+  }
+
+  .dashboard-header .ant-btn-primary {
+    padding: 4px 8px;
+  }
+
+  .dashboard-welcome {
+    align-items: flex-start;
+    gap: 12px;
+    flex-direction: column;
+  }
+}
